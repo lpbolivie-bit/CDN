@@ -22,4 +22,4 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3
       with:
         deploy_key: ${{ secrets.DEPLOY_KEY }}
-        publish_dir: ./workspaces/CDN/Images/Logo.jpeg # Adjust the directory based on your build output
+        publish_dir: ./workspaces/CDN/Logo.jpeg # Adjust the directory based on your build output
