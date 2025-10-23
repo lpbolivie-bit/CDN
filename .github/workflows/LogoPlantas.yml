@@ -15,11 +15,12 @@ jobs:
 
     - name: Build and test
       run: |
-        # Your build and test commands here
-      working-directory: ./images
+        echo "Running build..."
+        # Add your build or test commands here
+      working-directory: ./CDN
 
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
         deploy_key: ${{ secrets.DEPLOY_KEY }}
-        publish_dir: ./workspaces/CDN/Logo.jpeg # Adjust the directory based on your build output
+        publish_dir: ./CDN
