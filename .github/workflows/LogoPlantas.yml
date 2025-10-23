@@ -19,7 +19,7 @@ jobs:
       working-directory: ./images
 
     - name: Deploy
-      uses: peaceiris/actions-gh-pages@v4
+      uses: peaceiris/actions-gh-pages@v5
       with:
         deploy_key: ${{ secrets.DEPLOY_KEY }}
-        publish_dir: ./workspaces/CDN/Images/apple-touch-icon.png  # Adjust the directory based on your build output
+        publish_dir: ./workspaces/CDN/Images/Logo.jpeg # Adjust the directory based on your build output
